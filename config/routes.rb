@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 #------------------------show
   get 'lists/:id' => 'lists#show', as: 'list'
 #------------------------edit
-  get 'lists/edit'
+  get 'lists/:id/edit' => 'lists#edit' , as: 'edit_list'
+#------------------------
   get '/top' => 'homes#top'
 end
